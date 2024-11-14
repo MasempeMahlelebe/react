@@ -1,0 +1,51 @@
+/* Main Section - Adjust Width */
+.product-management {
+    width: 100%; /* Change from 85% to 100% */
+    max-width: 1000px; /* Reduce max-width for better fit */
+    margin: 20px auto; /* Adjust margins for better spacing */
+    font-family: 'Arial', sans-serif;
+    padding: 16px; /* Reduce padding for more content space */
+    background-color: #f7f9fc;
+    border-radius: 16px;
+    box-shadow: 0px 4px 12px rgba(215, 23, 23, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Table Container - Adjust Width */
+.table-container {
+    margin-top: 20px; /* Reduce margin for space efficiency */
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(166, 20, 20, 0.1);
+    background-color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-management {
+        width: 95%; /* Slightly reduce for smaller screens */
+        max-width: 750px; /* Further reduce max-width */
+    }
+
+    .product-table th,
+    .product-table td,
+    .sold-table th,
+    .sold-table td {
+        padding: 10px; /* Reduce padding for smaller screens */
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-management {
+        width: 90%; /* Further adjust for mobile screens */
+        padding: 10px; /* Reduce padding for better fit */
+    }
+
+    .product-table th,
+    .product-table td,
+    .sold-table th,
+    .sold-table td {
+        padding: 8px;
+        font-size: 0.75rem; /* Smaller font for mobile */
+    }
+}

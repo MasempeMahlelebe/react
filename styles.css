@@ -1,0 +1,159 @@
+/* General Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f7df; /* Light green background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+/* Login Form */
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 35px; /* Reduced padding for a more compact form */
+    background: #ffffff; /* White background for the form */
+    border-radius: 12px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px; /* Reduced max width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#login:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Styling */
+#login h2 {
+    margin-bottom: 20px; /* Reduced margin */
+    color: #4caf50; /* Light green color */
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
+}
+
+/* Input Fields */
+#login input[type="text"], 
+#login input[type="password"] {
+    width: 100%;
+    padding: 14px; /* Reduced padding */
+    margin: 10px 0; /* Reduced margin */
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #333;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#login input[type="text"]:focus, 
+#login input[type="password"]:focus {
+    background: #ffffff;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+    outline: none;
+    border: 2px solid #4caf50; /* Light green border on focus */
+}
+
+/* Submit Button */
+#login button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #4caf50; /* Light green background */
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#login button:hover {
+    transform: scale(1.05);
+    background: #45a049; /* Slightly darker green on hover */
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Forgot Password Link */
+#login .forgot-password {
+    margin-top: 10px;
+    color: #4caf50; /* Light green color */
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#login .forgot-password:hover {
+    color: #388e3c; /* Darker green on hover */
+}
+
+/* Vertical Spacing */
+#login > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #login {
+        padding: 20px 30px; /* Reduced padding for smaller screens */
+    }
+
+    #login h2 {
+        font-size: 1.6rem;
+    }
+
+    input, button {
+        font-size: 1rem;
+    }
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+input {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+    border-color: #4caf50; /* Light green border on focus */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3); /* Light green shadow on focus */
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 14px;
+    background-color: #4caf50; /* Light green background */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green background on hover */
+    transform: scale(1.03);
+}

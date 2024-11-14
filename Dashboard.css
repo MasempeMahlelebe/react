@@ -1,0 +1,151 @@
+/* Navbar Container */
+#navbar {
+    width: 100%;
+    background: #34495e; /* Dark blue-gray background */
+    color: #ecf0f1; /* Light text color */
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix navbar at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Dashboard Container */
+#dashboard {
+    max-width: 1400px; /* Increased width for the form */
+    margin: 120px auto 20px; /* Increased top margin to account for fixed navbar */
+    padding: 20px;
+    background: #ffffff; /* Pure white for a clean look */
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Stock Overview Section */
+#stockOverview {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Space between the chart and images */
+    align-items: flex-start; /* Align items to the top */
+    gap: 30px; /* Space between the chart and images */
+}
+
+#stockOverview h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Chart Container */
+.chart-container {
+    width: 60%; /* Set chart width to 60% of the available space */
+    max-height: 400px; /* Adjust height */
+    padding: 15px;
+    background-color: #f3f8fc; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Rotating Images */
+.rotating-images {
+    width: 35%; /* Set image container width to 35% of the available space */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 10px; /* Space between images */
+    justify-content: flex-start; /* Align images to the top */
+    align-items: center; /* Center images horizontally */
+}
+
+.rotating-image {
+    width: 150px; /* Increased width for a larger circular image */
+    height: 150px; /* Increased height to maintain a square shape */
+    object-fit: cover; /* Ensure image fills the square without distortion */
+    border-radius: 50%; /* Makes the images circular */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Table Styles */
+.stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stock-table th, .stock-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #d1d8e0;
+    transition: background-color 0.3s;
+}
+
+.stock-table th {
+    background: #34495e; /* Dark blue-gray */
+    color: #ecf0f1; /* Light text */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stock-table td {
+    background: #ffffff; /* Pure white */
+    color: #2c3e50; /* Dark blue-gray text */
+}
+
+.stock-table tbody tr:nth-child(even) {
+    background: #f0f4f8; /* Soft gray for alternate rows */
+}
+
+.stock-table tbody tr:hover {
+    background: #d6e9f9; /* Light blue highlight */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #stockOverview {
+        flex-direction: column;
+        gap: 20px; /* Reduce space between the chart and images on mobile */
+    }
+
+    .rotating-images {
+        width: 100%; /* Ensure images take up full width on mobile */
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        gap: 10px; /* Space between images */
+        justify-content: center; /* Center images vertically */
+        align-items: center; /* Center images horizontally */
+    }
+    
+    .rotating-image {
+        width: 120px; /* Larger images on mobile */
+        height: 120px; /* Maintain square shape */
+        object-fit: cover;
+        border-radius: 50%; /* Make the images circular */
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .chart-container {
+        width: 100%; /* Ensure chart takes full width */
+        max-height: 250px; /* Further reduce chart height for smaller screens */
+    }
+
+    .stock-table th, .stock-table td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+}
+body{
+    padding-top: 200px;
+}
+button{
+    margin-left: 20px;
+}
